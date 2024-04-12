@@ -28,4 +28,4 @@ jobs:
           ls
         
           # Deploy resources using Walrus files.
-          ./walrus apply -f ./walrus-file.yaml --wait
+          ./walrus apply -f ${{ github.workspace }}/walrus-file.yaml --wait
