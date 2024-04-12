@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: Download CLI
         run: |
-          # Install walrus cli
+          # Install walrus cli 
           curl -v -k -o walrus -LO "${{ secrets.CI_WALRUS_SERVER }}/cli?arch=amd64&os=linux"
           chmod +x ./walrus
 
