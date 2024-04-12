@@ -13,6 +13,9 @@ jobs:
         arch: 
           - amd64
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        
       - name: Download CLI
         run: |
           # Install walrus cli 
@@ -29,4 +32,4 @@ jobs:
           ls
         
           # Deploy resources using Walrus files.
-          ./walrus apply -f ${{ github.workspace }}/walrus-file.yaml --wait
+          ./walrus apply -f walrus-file.yaml --wait
