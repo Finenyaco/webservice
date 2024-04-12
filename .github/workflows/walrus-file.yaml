@@ -1,0 +1,12 @@
+version: v1
+resources:
+- name: github-ci
+  type: containerservice
+  attributes:
+    containers:
+    - image: nginx
+      profile: run
+      resources:
+        cpu: 0.01
+        gpu: 0
+        memory: 10
