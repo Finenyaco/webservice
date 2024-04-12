@@ -27,8 +27,7 @@ jobs:
           # Configure Walrus CLI
           ./walrus login --insecure --server ${{ secrets.CI_WALRUS_SERVER }} --project default --environment local --api-key ${{ secrets.CI_WALRUS_API_KEY }} 
 
-          cd
-          pwd
+
           ls
         
           # Deploy resources using Walrus files.
